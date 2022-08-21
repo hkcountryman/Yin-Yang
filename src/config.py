@@ -79,9 +79,9 @@ config["running"] = False
 config["theme"] = ""
 config["soundEnabled"] = True
 
-config["codeEnabled"] = False
-config["codeLightTheme"] = "Default Light+"
-config["codeDarkTheme"] = "Default Dark+"
+# config["codeEnabled"] = False
+# config["codeLightTheme"] = "Default Light+"
+# config["codeDarkTheme"] = "Default Dark+"
 
 config["systemEnabled"] = False
 if config["desktop"] == "kde":
@@ -95,8 +95,9 @@ else:
 config["gtkEnabled"] = False
 if config["desktop"] == "kde":
     # these are the same, as breeze syncs its colors with qt
+    # no, that's no longer true I think? should be "Breeze Dark"
     config["gtkLightTheme"] = "Breeze"
-    config["gtkDarkTheme"] = "Breeze"
+    config["gtkDarkTheme"] = "Breeze Dark"
 else:
     # TODO add default gtk themes for non-kde systems
     config["gtkLightTheme"] = ""
@@ -211,8 +212,8 @@ def get_code_dark_theme():
     return config["codeDarkTheme"]
 
 
-def get_code_enabled():
-    return config["codeEnabled"]
+# def get_code_enabled():
+#     return config["codeEnabled"]
 
 
 def get_gtk_light_theme():
@@ -282,8 +283,8 @@ def code_get_dark_theme():
     return config["codeDarkTheme"]
 
 
-def code_get_checkbox():
-    return config["codeEnabled"]
+# def code_get_checkbox():
+#     return config["codeEnabled"]
 
 
 def gnome_get_light_theme():

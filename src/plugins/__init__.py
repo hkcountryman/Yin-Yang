@@ -10,7 +10,7 @@ plugins: [Plugin] = [
     kvantum.Kvantum(),
     wallpaper.Wallpaper(),
     firefox.Firefox(),
-    vscode.Vscode(),
+    # vscode.Vscode(),
     atom.Atom()
 ]
 
